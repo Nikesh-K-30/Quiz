@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sample.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="abc">
+        <div class="startscreen">
+        <h1 class="topic">Quiz App</h1>
+        <div class="settings">
+        <label for="numquestions">Number of Questions</label>
+        <select name="" id="numquestions">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>
+        <label for="category">Topic</label>
+        <select name="" id="category">
+            <option value="">Any Topics</option>
+            <option value="10">Books</option>
+            <option value="11">Films</option>
+            <option value="12">Music </option>
+            <option value="19">Mathematics</option>
+        </select>
+        <label for="difficulty">Difficulty Level</label>
+        <select name="" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard </option>
+        </select>
+        <label for="time">Time(in secs)</label>
+        <select name="" id="time">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20 </option>
+        </select>
+    </div>
+        <button class="btn start">Start Quiz</button>
+    </div>
+        <div class="quiz hide">
+        <div class="timer">
+            <div class="progress">
+                <div class="progressbar">
+                    <span class="progresstext">90</span>
+                    
+                </div>
+            </div>
+        </div>
+            <div class="questionwrapper">
+                <div class="number">
+                    Question <span class="current">1</span><span class="total">/10</span>
+                </div>
+                <div class="question">
+                    This is a question
+                </div>
+                <div class="answerwrapper">
+                    <div class="answer">
+                        <span class="text">Answer</span>
+                        <span class="checkbox">
+                            <span class="icon">-</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="answerwrapper">
+                    <div class="answer">
+                        <span class="text">Answer</span>
+                        <span class="checkbox">
+                            <span class="icon">-</span>
+                        </span>
+                    </div>
+                <div class="answerwrapper">
+                    <div class="answer">
+                        <span class="text">Answer</span>
+                        <span class="checkbox">
+                            <span class="icon">-</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="answerwrapper">
+                    <div class="answer selected">
+                        <span class="text">Answer</span>
+                        <span class="checkbox">
+                            <span class="icon">!</span>
+                        </span>
+                    </div>
+                </div>
+            <button class="btn submit">Submit</button>
+            <button class="btn next">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="endscreen hide">
+        <h1 class="heading">Quiz App</h1>
+        <div class="score">
+            <span class="scoretext">Your Scrore</span>
+        <div>
+            <span class="final">0</span>
+            <span class="total">/10</span>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="sample.js"></script>
+</body>
+</html>
