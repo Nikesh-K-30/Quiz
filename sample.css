@@ -150,11 +150,11 @@ select{
 .answer .checkbox .icon{
     opacity: 0;
 }
-.answer.selected .checkbox .icon{
+.answer .selected .checkbox .icon{
     opacity: 1;
 }
-.answer.correct{
-    border-color: #1bb01b;
+.answer .correct{
+    border-color: rgb(5, 237, 36);
 }
 .answer.wrong{
     border-color: #da0f0f;
